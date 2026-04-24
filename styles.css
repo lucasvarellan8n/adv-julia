@@ -589,11 +589,6 @@ textarea {
     width: min(calc(100% - 1.25rem), var(--container));
   }
 
-  .hero-metrics,
-  .about-highlights {
-    grid-template-columns: 1fr;
-  }
-
   .carousel-button {
     display: none;
   }
@@ -626,31 +621,43 @@ textarea {
     width: 100%;
   }
 
+  .hero-metrics,
+  .about-highlights,
   .practice-grid,
   .reasons-grid,
   .testimonial-track {
     display: grid;
+    grid-template-columns: none;
     grid-auto-flow: column;
-    grid-auto-columns: minmax(82%, 82%);
-    gap: 1rem;
+    grid-auto-columns: minmax(85%, 85%);
+    gap: 1.2rem;
     overflow-x: auto;
     overscroll-behavior-x: contain;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
-    padding-bottom: 0.35rem;
+    padding: 0.5rem 0 1.5rem;
+    margin: 0 -1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     scrollbar-width: none;
   }
 
+  .hero-metrics::-webkit-scrollbar,
+  .about-highlights::-webkit-scrollbar,
   .practice-grid::-webkit-scrollbar,
   .reasons-grid::-webkit-scrollbar,
   .testimonial-track::-webkit-scrollbar {
     display: none;
   }
 
+  .hero-metrics article,
+  .about-highlights article,
   .practice-card,
   .reason-card,
   .testimonial-card {
     scroll-snap-align: start;
+    height: auto;
+    min-width: 0;
   }
 
   .testimonial-shell {
@@ -667,6 +674,8 @@ textarea {
     inset: auto;
     opacity: 1;
     transform: none;
-    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }

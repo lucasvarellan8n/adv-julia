@@ -33,23 +33,29 @@ function moveSlide(direction) {
 }
 
 function startAutoRotate() {
-  if (slides.length < 2) return;
+  if (slides.length < 2 || window.innerWidth <= 720) return;
   clearInterval(autoRotate);
   autoRotate = setInterval(() => moveSlide(1), 6000);
 }
 
 if (slides.length) {
-  showSlide(activeSlide);
-  startAutoRotate();
+  if (window.innerWidth > 720) {
+    showSlide(activeSlide);
+    startAutoRotate();
+  }
 
   nextButton?.addEventListener("click", () => {
-    moveSlide(1);
-    startAutoRotate();
+    if (window.innerWidth > 720) {
+      moveSlide(1);
+      startAutoRotate();
+    }
   });
 
   prevButton?.addEventListener("click", () => {
-    moveSlide(-1);
-    startAutoRotate();
+    if (window.innerWidth > 720) {
+      moveSlide(-1);
+      startAutoRotate();
+    }
   });
 }
 
