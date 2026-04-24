@@ -1,392 +1,297 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matheus Prado | Fisiologia do Exercício & Performance</title>
-    <meta name="description" content="Engenharia de performance humana baseada em dados e fisiologia aplicada. Resultados reais, sem aproximações.">
-    <!-- Preloads for Performance Optimization -->
-    <link rel="preload" href="styles.css" as="style">
-    <link rel="preload" href="freepik_o-objeto-3d-central-faz-u_2792962721.mp4" as="video" type="video/mp4">
-    <link rel="preload" href="Design sem nome (99).png" as="image">
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Styles -->
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Julia Viana Diniz Advocacia oferece atendimento jurídico ético, acolhedor e estratégico em Poços de Caldas e online para todo o Brasil.">
+  <title>Julia Viana Diniz Advocacia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Preloader -->
-    <div id="loader" class="loader">
-        <div class="loader-content">
-            <span class="loader-text">PRADO</span>
-            <div class="loader-bar-container">
-                <div class="loader-bar"></div>
-            </div>
-        </div>
-    </div>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#inicio" aria-label="Página inicial Julia Viana Diniz Advocacia">
+          <span class="brand-text">
+            <strong>Julia Viana Diniz</strong>
+            <small>Advocacia</small>
+          </span>
+        </a>
 
-    <!-- Mobile Menu Overlay -->
-    <div class="mobile-menu" id="mobileMenu">
-        <a href="#philosophy" class="mobile-link">Filosofia</a>
-        <a href="#about" class="mobile-link">Autoridade</a>
-        <a href="#method" class="mobile-link">Método</a>
-        <a href="#services" class="mobile-link">Soluções</a>
-        <a href="#contact" class="mobile-link mobile-cta">Iniciar Protocolo</a>
-    </div>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menu">
+          <span></span>
+          <span></span>
+        </button>
 
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="#" class="logo">
-                <img src="Design sem nome (99).png" alt="Icon" class="logo-icon" width="24" height="24">
-                MATHEUS PRADO<span class="dot">.</span>
-            </a>
-            <div class="nav-links">
-                <a href="#philosophy">Filosofia</a>
-                <a href="#about">Autoridade</a>
-                <a href="#method">Método</a>
-                <a href="#services">Soluções</a>
-            </div>
-            <a href="#contact" class="btn-nav"><span>Iniciar Protocolo</span></a>
-            <button class="hamburger" id="hamburger" aria-label="Menu">
-                <span></span><span></span><span></span>
-            </button>
-        </div>
-    </nav>
+        <nav class="site-nav" id="site-nav">
+          <a href="#inicio">Home</a>
+          <a href="#sobre">Sobre Mim</a>
+          <a href="#atuacao">Áreas de Atuação</a>
+          <a href="#depoimentos">Depoimentos</a>
+          <a href="#contato">Contato</a>
+        </nav>
+
+        <a class="button button-primary header-cta" href="https://wa.me/5535991380178" target="_blank" rel="noreferrer">Agende uma Consulta</a>
+      </div>
+    </header>
 
     <main>
-        <!-- HERO -->
-        <section id="hero" class="hero">
-            <div class="hero-video-wrapper">
-                <video autoplay loop muted playsinline class="hero-video" preload="auto">
-                    <source src="freepik_o-objeto-3d-central-faz-u_2792962721.mp4" type="video/mp4">
-                </video>
-                <div class="hero-video-overlay"></div>
-            </div>
-            
-            <div class="ambient-glow glow-hero"></div>
-            
-            <div class="container hero-container">
-                <div class="hero-content">
-                    <div class="hero-tag reveal">ALTA PERFORMANCE HUMANA</div>
-                    <h1 class="reveal-delay">
-                        Seu corpo não é aleatório.<br>
-                        <span class="accent-text">Seu treino também não deveria ser.</span>
-                    </h1>
-                    <p class="reveal-delay-2">Transformo sua saúde através da ciência, biometria e resultados matematicamente mensuráveis. Sem invenções.</p>
-                    <div class="hero-cta reveal-delay-3">
-                        <a href="#contact" class="btn-primary">
-                            <span>Comece sua evolução</span>
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="scroll-wrap reveal-delay-3">
-                <div class="scroll-indicator">
-                    <div class="mouse">
-                        <div class="wheel"></div>
-                    </div>
-                </div>
-                <span class="scroll-text">EXPLORAR SISTEMA</span>
-            </div>
-        </section>
+      <section class="hero section" id="inicio">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Poços de Caldas, MG • Atendimento presencial e online</p>
+            <h1>Sua parceira legal em Poços de Caldas: expertise, ética e acolhimento.</h1>
+            <p class="hero-text">Soluções jurídicas personalizadas com a dedicação, o profissionalismo e a sensibilidade que você merece, em um atendimento claro, humano e estratégico.</p>
 
-        <!-- PHILOSOPHY / MANIFESTO -->
-        <section id="philosophy" class="philosophy">
-            <div class="ambient-glow glow-philosophy"></div>
-            <div class="container">
-                <div class="section-tag reveal">
-                    <span class="line"></span> O Manifesto
-                </div>
-                
-                <div class="manifesto-wrapper">
-                    <h2 class="reveal-delay philosophy-quote">
-                        "Isso não é adivinhação.<br>Isso é <em>ciência aplicada</em>."
-                    </h2>
-                    
-                    <div class="manifesto-grid">
-                        <div class="manifesto-card negative reveal">
-                            <div class="card-header">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="icon-red"><path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                                <span>O QUE NÃO FAÇO</span>
-                            </div>
-                            <h3>Aproximação, achismos ou treinos genéricos colados da internet.</h3>
-                        </div>
-                        <div class="manifesto-card positive reveal-delay">
-                            <div class="card-header">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="icon-white"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                                <span>O QUE ENTREGO</span>
-                            </div>
-                            <h3>Dados absolutos, estrutura milimétrica e individualização extrema.</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ABOUT (Authority) -->
-        <section id="about" class="about">
-            <!-- Full background image -->
-            <div class="about-bg-image">
-                <img src="freepik_use-the-provided-portrait_2820090903.png" alt="Matheus Prado" loading="lazy" decoding="async">
-                <div class="about-bg-overlay"></div>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#atuacao">Conheça Meus Serviços</a>
+              <a class="button button-secondary" href="#contato">Fale Comigo</a>
             </div>
 
-            <div class="container about-container">
-                <div class="about-text">
-                    <div class="section-tag reveal"><span class="line"></span> Perfil</div>
-                    <h2 class="reveal-delay">Não sou apenas um treinador.<br><span class="accent-text">Sou um Fisiologista Clínico.</span></h2>
-                    <div class="cref-badge reveal-delay-2">
-                        <span class="dot"></span> CREF Ativo: 054329-G/MG
-                    </div>
-                    <p class="reveal-delay-2">Como Bacharel em Educação Física com Especialização em Fisiologia do Exercício, utilizo meu método para converter princípios biológicos complexos em protocolos executáveis, garantindo que seu treino gere o máximo de adaptação física possível.</p>
-                    <p class="reveal-delay-3">Se a sua rotina exige excelência, seu corpo deve refletir essa mesma inteligência estratégica.</p>
-                </div>
+            <div class="hero-metrics">
+              <article>
+                <strong>5.0 estrelas</strong>
+                <span>Avaliação no Google Maps</span>
+              </article>
+              <article>
+                <strong>36 avaliações</strong>
+                <span>Confiança construída com proximidade</span>
+              </article>
+              <article>
+                <strong>Atendimento híbrido</strong>
+                <span>Poços de Caldas e todo o Brasil</span>
+              </article>
             </div>
-        </section>
+          </div>
 
-        <!-- METHOD -->
-        <section id="method" class="method">
-            <div class="ambient-glow glow-method"></div>
-            <div class="container">
-                <div class="method-header reveal">
-                    <div class="section-tag"><span class="line"></span> Meus Pilares</div>
-                    <h2>Engenharia de <em>Performance</em></h2>
-                    <p>Uma progressão lógica, estruturada e implacável para o seu resultado.</p>
-                </div>
-                
-                <div class="method-steps">
-                    <div class="step-card reveal">
-                        <div class="step-bg">01</div>
-                        <div class="step-content">
-                            <h3>Avaliação Biomecânica</h3>
-                            <p>Análise cirúrgica do seu estado metabólico atual, limitações articulares e histórico fisio.</p>
-                        </div>
-                    </div>
-                    <div class="step-card reveal-delay">
-                        <div class="step-bg">02</div>
-                        <div class="step-content">
-                            <h3>Desenho Estratégico</h3>
-                            <p>Desenvolvo o protocolo manipulando variáveis como volume, intensidade e densidade.</p>
-                        </div>
-                    </div>
-                    <div class="step-card reveal-delay-2">
-                        <div class="step-bg">03</div>
-                        <div class="step-content">
-                            <h3>Execução Controlada</h3>
-                            <p>Aplico o estímulo com precisão angular e acompanhamento de cadência rigoroso.</p>
-                        </div>
-                    </div>
-                    <div class="step-card reveal-delay-3">
-                        <div class="step-bg">04</div>
-                        <div class="step-content">
-                            <h3>Ajuste Cibernético</h3>
-                            <p>Feedback contínuo. Caliibro seu macrociclo baseado na taxa de resposta adaptativa do seu corpo.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="method-footer reveal">
-                    <div class="divider"></div>
-                    <p class="accent-text tracking-wide">CADA PROTOCOLO QUE DESENHO É ÚNICO E INTRANSFERÍVEL.</p>
-                </div>
+          <div class="hero-visual reveal">
+            <div class="hero-card">
+              <img src="freepik_important-strict-referenc_2859773108.png" alt="Julia Viana Diniz em ambiente profissional e acolhedor.">
             </div>
-        </section>
-
-        <!-- SERVICES -->
-        <section id="services" class="services">
-            <div class="container">
-                <div class="services-header reveal">
-                    <div class="section-tag"><span class="line"></span> Modalidades</div>
-                    <h2>Soluções <em>Estratégicas</em></h2>
-                </div>
-                
-                <div class="services-grid">
-                    <div class="service-item reveal">
-                        <div class="service-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-                        </div>
-                        <div class="service-text">
-                            <h3>Treinamento Presencial</h3>
-                            <p>Acompanhamento lado a lado. Excelência técnica, mitigação de risco e extração do seu platô máximo de força.</p>
-                        </div>
-                    </div>
-                    <div class="service-item reveal-delay">
-                        <div class="service-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
-                        </div>
-                        <div class="service-text">
-                            <h3>Consultoria Online de Elite</h3>
-                            <p>Metodologia Prado entregue na palma da sua mão. Suporte contínuo onde quer que você esteja no mundo.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="service-list reveal-delay-2">
-                        <div class="focus-area">
-                            <h4>✓ Perda de Gordura</h4>
-                            <p>Otimização mitocondrial e lipólise sustentável.</p>
-                        </div>
-                        <div class="focus-area">
-                            <h4>✓ Hipertrofia</h4>
-                            <p>Sinalização celular maximizada por tensão mecânica.</p>
-                        </div>
-                        <div class="focus-area">
-                            <h4>✓ Reabilitação</h4>
-                            <p>Restauração funcional para retorno à máxima potência.</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="floating-note">
+              <span>Atuação ética</span>
+              <strong>Firmeza técnica com escuta genuína</strong>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!-- RESULTS / DIVIDER -->
-        <section class="results">
-            <div class="ambient-glow glow-results"></div>
-            <div class="container results-container reveal">
-                <h2>Método &gt; Motivação.</h2>
-                <div class="results-line"></div>
-                <p>A motivação é volátil. Um sistema matemático e fisiologicamente embasado não falha. A consistência é um subproduto de um protocolo bem desenhado.</p>
+      <section class="section intro-band reveal">
+        <div class="container intro-grid">
+          <div>
+            <p class="section-tag">Compromisso com você</p>
+            <h2>Um escritório pensado para orientar, acolher e agir com precisão.</h2>
+          </div>
+          <p>Cada caso é tratado com atenção individual, comunicação transparente e estratégias jurídicas construídas de forma responsável. O objetivo é oferecer segurança, clareza e caminhos reais para a sua demanda.</p>
+        </div>
+      </section>
+
+      <section class="section about" id="sobre">
+        <div class="container split-layout">
+          <div class="image-panel reveal">
+            <div class="portrait-frame">
+              <img src="freepik_img1-important-strict-ima_2859745537.png" alt="Retrato profissional de Julia Viana Diniz sorrindo.">
             </div>
-        </section>
+          </div>
 
-        <!-- APPLICATION FORM -->
-        <section id="contact" class="application">
-            <div class="container application-container">
-                <div class="application-header reveal">
-                    <div class="section-tag"><span class="line"></span> Alpha Phase</div>
-                    <h2>Inicie seu <em>Protocolo</em></h2>
-                    <p>Submeta seus dados iniciais para viabilidade de acompanhamento.</p>
+          <div class="content-panel reveal">
+            <p class="section-tag">Sobre Mim</p>
+            <h2>Advocacia com presença, sensibilidade e compromisso verdadeiro com cada história.</h2>
+            <p>Olá, eu sou Julia Viana Diniz. Minha atuação no Direito é guiada por um propósito simples e profundo: oferecer não apenas orientação jurídica, mas também segurança emocional e clareza para quem está enfrentando decisões importantes.</p>
+            <p>Acredito que o atendimento jurídico deve unir técnica, escuta e transparência. Por isso, conduzo cada caso com estratégia personalizada, postura ética e uma comunicação acessível, para que você compreenda cada etapa e se sinta amparado(a) ao longo de todo o caminho.</p>
+            <p>Com atendimento presencial em Poços de Caldas e suporte online para clientes de todo o Brasil, busco entregar uma advocacia moderna, humana e resolutiva, com delicadeza na forma e firmeza na defesa dos seus direitos.</p>
+
+            <div class="about-highlights">
+              <article>
+                <strong>Presencial e online</strong>
+                <span>Atendimento próximo, com comodidade e sigilo.</span>
+              </article>
+              <article>
+                <strong>Comunicação clara</strong>
+                <span>Orientação objetiva para decisões mais seguras.</span>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section practice" id="atuacao">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-tag">Áreas de Atuação</p>
+            <h2>Soluções jurídicas cuidadosas, estratégicas e alinhadas à sua realidade.</h2>
+            <p>Atendimento orientado para proteger seus interesses com objetividade, acolhimento e atenção aos detalhes de cada situação.</p>
+          </div>
+
+          <div class="practice-grid">
+            <article class="practice-card reveal">
+              <span class="card-index">01</span>
+              <h3>Direito Civil</h3>
+              <p>Orientação em contratos, responsabilidade civil, indenizações e conflitos do dia a dia, com linguagem clara e foco na melhor solução para o seu caso.</p>
+            </article>
+            <article class="practice-card reveal">
+              <span class="card-index">02</span>
+              <h3>Direito de Família e Sucessões</h3>
+              <p>Apoio em divórcio, guarda, pensão alimentícia, inventário e planejamento sucessório, sempre com a sensibilidade que temas familiares exigem.</p>
+            </article>
+            <article class="practice-card reveal">
+              <span class="card-index">03</span>
+              <h3>Direito do Consumidor</h3>
+              <p>Defesa diante de cobranças indevidas, falhas na prestação de serviços, contratos abusivos e demais situações que ferem seus direitos como consumidor.</p>
+            </article>
+            <article class="practice-card reveal">
+              <span class="card-index">04</span>
+              <h3>Direito Trabalhista</h3>
+              <p>Atuação em verbas rescisórias, horas extras, reconhecimento de direitos e conflitos trabalhistas com postura técnica e estratégica.</p>
+            </article>
+            <article class="practice-card reveal">
+              <span class="card-index">05</span>
+              <h3>Direito Previdenciário</h3>
+              <p>Auxílio em aposentadorias, benefícios do INSS e revisão de direitos previdenciários, com acompanhamento atento em cada fase do processo.</p>
+            </article>
+            <article class="practice-card reveal">
+              <span class="card-index">06</span>
+              <h3>Consultoria Jurídica Personalizada</h3>
+              <p>Análise individualizada para pessoas e empresas que buscam prevenção de conflitos, orientação segura e suporte jurídico confiável.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reasons">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-tag">Por Que Escolher Julia Viana Diniz?</p>
+            <h2>Confiança construída com técnica, transparência e um atendimento genuinamente humano.</h2>
+          </div>
+
+          <div class="reasons-grid">
+            <article class="reason-card reveal">
+              <h3>Expertise Comprovada</h3>
+              <p>Com vasta experiência e conhecimento jurídico aprofundado, oferecendo uma análise precisa e estratégica.</p>
+            </article>
+            <article class="reason-card reveal">
+              <h3>Atendimento Personalizado</h3>
+              <p>Cada caso é único e tratado com atenção individualizada, escuta ativa e sensibilidade.</p>
+            </article>
+            <article class="reason-card reveal">
+              <h3>Ética e Transparência</h3>
+              <p>Compromisso inabalável com a conduta ética e a clareza em todas as etapas, fortalecendo uma relação de confiança.</p>
+            </article>
+            <article class="reason-card reveal">
+              <h3>Resultados e Acolhimento</h3>
+              <p>Foco em soluções eficazes e na satisfação dos clientes, em um ambiente de suporte, respeito e proximidade.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section testimonials" id="depoimentos">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-tag">Depoimentos</p>
+            <h2>Reconhecimento que reforça a qualidade de um atendimento atento e ético.</h2>
+            <p>Com avaliação 5.0 e 36 depoimentos no Google Maps, a confiança dos clientes reflete o cuidado colocado em cada atendimento.</p>
+          </div>
+
+          <div class="testimonial-shell reveal">
+            <button class="carousel-button prev" type="button" aria-label="Depoimento anterior">&#8592;</button>
+            <div class="testimonial-track" aria-live="polite">
+              <article class="testimonial-card active">
+                <div class="stars" aria-hidden="true">★★★★★</div>
+                <p>"Desde o primeiro contato, ela demonstrou um alto nível de profissionalismo, clareza e empatia."</p>
+                <div class="testimonial-author">
+                  <span class="avatar">GB</span>
+                  <div>
+                    <strong>Giovanna Bernardo</strong>
+                    <span>Cliente satisfeita</span>
+                  </div>
                 </div>
-                
-                <form id="protocol-form" class="application-form reveal-delay">
-                    <div class="form-grid">
-                        <div class="input-modern full-width">
-                            <input type="text" id="nome" name="nome" placeholder=" " required>
-                            <label for="nome">Nome Completo</label>
-                            <div class="input-line"></div>
-                        </div>
-                        
-                        <div class="input-modern">
-                            <input type="number" id="idade" name="idade" placeholder=" " required>
-                            <label for="idade">Idade atual</label>
-                            <div class="input-line"></div>
-                        </div>
-                        
-                        <div class="input-modern">
-                            <input type="text" id="cidade" name="cidade" placeholder=" ">
-                            <label for="cidade">Cidade (Opcional)</label>
-                            <div class="input-line"></div>
-                        </div>
+              </article>
 
-                        <div class="input-modern select-wrapper">
-                            <select id="objetivo" name="objetivo" required>
-                                <option value="" disabled selected>Selecionar o alvo principal</option>
-                                <option value="Perda de Gordura Extrema">Perda de Gordura</option>
-                                <option value="Hipertrofia Muscular">Hipertrofia</option>
-                                <option value="Reabilitação Articular">Reabilitação Articular</option>
-                                <option value="Condicionamento Misto">Aumento de Performance Global</option>
-                            </select>
-                            <div class="select-arrow"></div>
-                            <div class="input-line"></div>
-                        </div>
+              <article class="testimonial-card">
+                <div class="stars" aria-hidden="true">★★★★★</div>
+                <p>"Excelente profissional, tive um ótimo atendimento com muita dedicação e profissionalismo. Me ajudou em tudo."</p>
+                <div class="testimonial-author">
+                  <span class="avatar">IB</span>
+                  <div>
+                    <strong>Isabela Basso</strong>
+                    <span>Atendimento recomendado</span>
+                  </div>
+                </div>
+              </article>
 
-                        <div class="input-modern select-wrapper">
-                            <select id="nivel" name="nivel" required>
-                                <option value="" disabled selected>Experiência de treino</option>
-                                <option value="Sedentário/Iniciante">Iniciante (Pouco a nenhum treino sólido)</option>
-                                <option value="Intermediário">Intermediário (Treino consistente &gt; 1 ano)</option>
-                                <option value="Avançado">Avançado (Treino consistente &gt; 3 anos)</option>
-                            </select>
-                            <div class="select-arrow"></div>
-                            <div class="input-line"></div>
-                        </div>
-
-                        <div class="input-modern full-width">
-                            <input type="text" id="disponibilidade" name="disponibilidade" placeholder=" " required>
-                            <label for="disponibilidade">Dias e tempo disponíveis na semana (Ex: 4x, 60min)</label>
-                            <div class="input-line"></div>
-                        </div>
-
-                        <div class="input-modern textarea-modern full-width">
-                            <textarea id="dificuldade" name="dificuldade" placeholder=" " required></textarea>
-                            <label for="dificuldade">Qual tem sido o seu maior obstáculo até hoje?</label>
-                            <div class="input-line"></div>
-                        </div>
-                    </div>
-                    
-                    <div class="form-action">
-                        <button type="submit" class="btn-primary w-full">
-                            <span>Processar e Enviar via WhatsApp</span>
-                            <span class="btn-loader"></span>
-                        </button>
-                    </div>
-                </form>
+              <article class="testimonial-card">
+                <div class="stars" aria-hidden="true">★★★★★</div>
+                <p>"Profissional ímpar, que trabalha com muita dedicação, competência e ética. Agradeço a atenção e indico o trabalho dela."</p>
+                <div class="testimonial-author">
+                  <span class="avatar">LS</span>
+                  <div>
+                    <strong>Lais Silva psi</strong>
+                    <span>Confiança e acolhimento</span>
+                  </div>
+                </div>
+              </article>
             </div>
-        </section>
+            <button class="carousel-button next" type="button" aria-label="Próximo depoimento">&#8594;</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact" id="contato">
+        <div class="container contact-grid">
+          <div class="contact-copy reveal">
+            <p class="section-tag">Contato</p>
+            <h2>Vamos conversar sobre a melhor solução jurídica para o seu caso?</h2>
+            <p>Se você busca orientação confiável, atendimento próximo e clareza em cada passo, será um prazer ouvir sua história e ajudar com responsabilidade e dedicação.</p>
+
+            <div class="contact-list">
+              <a href="https://wa.me/5535991380178" target="_blank" rel="noreferrer">
+                <strong>Telefone e WhatsApp</strong>
+                <span>+55 35 99138-0178</span>
+              </a>
+              <a href="https://www.google.com/maps/place/Advogada+Po%C3%A7os+de+Caldas+%7C+Julia+Viana+Diniz+advocacia/@-21.7902188,-46.5598688,17z" target="_blank" rel="noreferrer">
+                <strong>Endereço</strong>
+                <span>R. Barros Cobra, 667 - Centro, Poços de Caldas - MG</span>
+              </a>
+              <a href="https://www.instagram.com/juliavianadiniz.adv/" target="_blank" rel="noreferrer">
+                <strong>Instagram</strong>
+                <span>@juliavianadiniz.adv</span>
+              </a>
+              <div>
+                <strong>Horário de atendimento</strong>
+                <span>Segunda a Sexta, das 09:00 às 16:00</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-card reveal">
+            <p class="contact-card-tag">Agendamento</p>
+            <h3>Atendimento presencial em Poços de Caldas e online para todo o Brasil.</h3>
+            <p>Escolha a forma de contato mais conveniente e receba um retorno atencioso, com a discrição que sua demanda merece.</p>
+            <div class="contact-actions">
+              <a class="button button-primary" href="https://wa.me/5535991380178" target="_blank" rel="noreferrer">Chamar no WhatsApp</a>
+              <a class="button button-secondary" href="https://www.google.com/maps/place/Advogada+Po%C3%A7os+de+Caldas+%7C+Julia+Viana+Diniz+advocacia/@-21.7902188,-46.5598688,17z" target="_blank" rel="noreferrer">Ver no Mapa</a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer class="footer">
-        <div class="container footer-container">
-            <div class="footer-top">
-                <div class="footer-brand">
-                    <a href="#" class="logo">
-                        <img src="Design sem nome (99).png" alt="Icon" class="logo-icon" width="24" height="24" loading="lazy">
-                        MATHEUS PRADO<span class="dot">.</span>
-                    </a>
-                    <p>Fisiologia Aplicada ao Treinamento</p>
-                </div>
-                <div class="footer-badge">
-                    <span>CREF</span>
-                    <strong>054329-G/MG</strong>
-                </div>
-            </div>
-            
-            <div class="footer-lines"></div>
-            
-            <div class="footer-bottom">
-                <div class="footer-copy">
-                    &copy; <span id="year">2026</span> Matheus Prado. High Performance.
-                </div>
-                <div class="footer-social">
-                    <a href="https://instagram.com/mathprado_personal" target="_blank" class="social-link">Instagram <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 16.8V7H7.2"/></svg></a>
-                    <a href="https://wa.me/5535999072623" target="_blank" class="social-link">WhatsApp <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 16.8V7H7.2"/></svg></a>
-                </div>
-            </div>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <strong>Julia Viana Diniz Advocacia</strong>
+          <p>Atendimento jurídico com ética, acolhimento e estratégia.</p>
         </div>
+        <p>Poços de Caldas, MG • Atendimento presencial e online</p>
+      </div>
     </footer>
+  </div>
 
-    <!-- Scripts -->
-    <script src="main.js" defer></script>
-    <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-
-        // Mobile Menu Toggle
-        const hamburger = document.getElementById('hamburger');
-        const mobileMenu = document.getElementById('mobileMenu');
-        const mobileLinks = mobileMenu.querySelectorAll('a');
-
-        function toggleMenu() {
-            hamburger.classList.toggle('open');
-            mobileMenu.classList.toggle('open');
-            document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
-        }
-
-        hamburger.addEventListener('click', toggleMenu);
-
-        // Close on link click
-        mobileLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                hamburger.classList.remove('open');
-                mobileMenu.classList.remove('open');
-                document.body.style.overflow = '';
-            });
-        });
-    </script>
+  <script src="script.js"></script>
 </body>
 </html>
